@@ -1,18 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Card from '../components/card';
+import Header from '../components/header';
 
 const IndexPage = () => (
   <div>
     <div>
-    <div className="Header">
-    <div className="HeaderGroup">
-      <Link to="/"><img width="30" src={require('../images/logo-designcode.svg')} /></Link>
-      <Link to="/courses">Courses</Link>
-      <Link to="/downloads">Downloads</Link>
-      <Link to="/workshops">Workshops</Link>
-      <Link to="/buy"><button>Buy</button></Link>
-    </div>
-    </div>
+    < Header></Header>
     <div className="Hero">
       <div className="HeroGroup">
         <h1>Learn to <br />design and code React apps</h1>
@@ -40,6 +34,27 @@ const IndexPage = () => (
           </path>
         </svg>
       </div>
+    </div>
+    <div className="Cards">
+      <h2>11 courses, more coming</h2>
+      <div className="CardGroup">
+    <Card 
+      title="DesignSystem"
+      text="10 sections"
+      image={require('../images/wallpaper.jpg')} />
+    <Card 
+      title="React for Designers"
+      text="11 sections"
+      image={require('../images/wallpaper2.jpg')} />
+    <Card 
+      title="Sound Design"
+      text="5 sections"
+      image={require('../images/wallpaper3.jpg')} />
+    <Card 
+      title="ARKit 2"
+      text="10 sections"
+      image={require('../images/wallpaper4.jpg')} />
+</div>
     </div>
     </div>
   </div>
