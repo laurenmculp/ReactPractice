@@ -1,13 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Card from '../components/card';
-import Header from '../components/header';
 import Section from '../components/section';
+import Wave from '../components/wave';
 
 const IndexPage = () => (
   <div>
     <div>
-    < Header></Header>
     <div className="Hero">
       <div className="HeroGroup">
         <h1>Learn to <br />design and code React apps</h1>
@@ -22,6 +21,9 @@ const IndexPage = () => (
           <img src={require('../images/logo-react.png')} width="50" />
           <img src={require('../images/logo-swift.png')} width="50" />
         </div>
+        <Wave />
+
+        {/* The following svg code isn't supposed to be here 
         <svg width="100%" height="172" viewBox="0 0 100% 172" fill="none">
           <path fill="white">
           <animate repeatCount="indefinite" fill="freeze" attributeName="d" dur="10s"
@@ -33,7 +35,7 @@ const IndexPage = () => (
         
             M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z;" />
           </path>
-        </svg>
+        </svg>*/}
       </div>
     </div>
     <div className="Cards">
